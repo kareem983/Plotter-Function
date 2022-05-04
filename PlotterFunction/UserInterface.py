@@ -1,7 +1,6 @@
 from tkinter import *
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
 from PlotStatus import PlotStatus
 from Plotter import Plotter
 import tkinter.messagebox as ms
@@ -26,18 +25,18 @@ class UserInterface:
         self.maxLimit = StringVar(self.root, "10")
 
     def showErrorMessage(self):
-        ms.showerror("ERROR", self.status_message)
+        ms.showerror("ERROR: InValid Input", self.status_message)
 
     def plotFunction(self):
         try:
             self.status_message = self.plotter.validate(self.equation.get(), self.minLimit.get(), self.maxLimit.get())
             if self.status_message == PlotStatus.no1.value:  # if Dene
-                self.fig = self.plotter.plotFunction(self.equation.get(), self.minLimit.get(), self.maxLimit.get())
+                self.fig = self.plotter.plotFunction(self.minLimit.get(), self.maxLimit.get())
                 self.updateFigure()
             else:
                 self.showErrorMessage()
         except:
-            self.status_message = PlotStatus.no0.value
+            self.status_message = PlotStatus.no4.value
             self.showErrorMessage()
 
     def updateFigure(self):
@@ -76,23 +75,23 @@ class UserInterface:
         # Create Min Limit Label & Entry
         label = StringVar()
         l = Label(self.root, textvariable=label)
-        label.set("Min Limit: ")
+        label.set("Min X Limit: ")
         l.config(font=('Comic Sans MS bold', 10), fg="#000", bg="#DECBA4")
         l.place(x=20, y=465)
 
         e = Entry(self.root, textvariable=self.minLimit)
         e.config(font=('Comic Sans MS bold', 10), fg="#000", bg="#FFF")
-        e.place(x=100, y=467)
+        e.place(x=120, y=467)
 
         # Create Max Limit Label & Entry
         label = StringVar()
         l = Label(self.root, textvariable=label)
-        label.set("Max Limit: ")
+        label.set("Max X Limit: ")
         l.config(font=('Comic Sans MS bold', 10), fg="#000", bg="#DECBA4")
         l.place(x=20, y=510)
 
         e = Entry(self.root, textvariable=self.maxLimit)
         e.config(font=('Comic Sans MS bold', 10), fg="#000", bg="#FFF")
-        e.place(x=100, y=512)
+        e.place(x=120, y=512)
 
         self.root.mainloop()

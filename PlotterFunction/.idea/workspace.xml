@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f231f395-ae8a-43a0-be97-d9e169ef3c0b" name="Default Changelist" comment="UI: Adding The User Interface">
+    <list default="true" id="f231f395-ae8a-43a0-be97-d9e169ef3c0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlotStatus.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotStatus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserInterface.py" afterDir="false" />
     </list>
@@ -80,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651624781826</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="validate: Adding Validation on Min/Max Limitation.&#10;Adding Plotting Status Messages.&#10;Construct Program Process.">
+      <created>1651636612265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651636612265</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -95,56 +103,57 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UI: Adding The User Interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI: Adding The User Interface" />
+    <MESSAGE value="validate: Adding Validation on Min/Max Limitation.&#10;Adding Plotting Status Messages.&#10;Construct Program Process." />
+    <option name="LAST_COMMIT_MESSAGE" value="validate: Adding Validation on Min/Max Limitation.&#10;Adding Plotting Status Messages.&#10;Construct Program Process." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1651624988105">
+    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1651636610322">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651624988105" />
+    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651636610322" />
     <state x="462" y="123" key="FileChooserDialogImpl" timestamp="1651612737223">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1651612737223" />
-    <state width="1345" height="227" key="GridCell.Tab.0.bottom" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.0.bottom" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.0.center" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.0.center" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.0.left" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.0.left" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.0.right" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.0.right" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.1.bottom" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.1.bottom" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.1.center" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.1.center" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.1.left" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.1.left" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
-    <state width="1345" height="227" key="GridCell.Tab.1.right" timestamp="1651636441605">
+    <state width="1345" height="163" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
+    <state width="1345" height="163" key="GridCell.Tab.1.right" timestamp="1651642919346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="227" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1651636441605" />
+    <state width="1345" height="163" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1651642919346" />
     <state x="184" y="11" key="SettingsEditor" timestamp="1651625109588">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="11" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1651625109588" />
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651625120970">
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2" timestamp="1651636623161">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651625120970" />
+    <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651636623161" />
   </component>
 </project>
