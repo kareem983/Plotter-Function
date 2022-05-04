@@ -1,6 +1,8 @@
 from tkinter import *
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+
+from PlotStatus import PlotStatus
 from Plotter import Plotter
 import tkinter.messagebox as ms
 
@@ -18,20 +20,24 @@ class UserInterface:
         plot1 = self.fig.add_subplot(111)
         plot1.plot(1, 1)
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.root)
-        self.checkFlag = 1
-        self.equation = StringVar(self.root, "")
-        self.minLimit = IntVar(self.root, -10)
-        self.maxLimit = IntVar(self.root, 10)
+        self.status_message = ""
+        self.equation = StringVar(self.root, "x")
+        self.minLimit = StringVar(self.root, "-10")
+        self.maxLimit = StringVar(self.root, "10")
 
     def showErrorMessage(self):
-        if self.checkFlag == 0:
-            ms.showerror("Empty Cell", "Please Enter the Empty Cell")
+        ms.showerror("ERROR", self.status_message)
 
     def plotFunction(self):
-        self.fig, self.checkFlag = self.plotter.plotFunction(self.equation.get(), self.minLimit.get(), self.maxLimit.get())
-        if self.checkFlag == 1:
-            self.updateFigure()
-        else:
+        try:
+            self.status_message = self.plotter.validate(self.equation.get(), self.minLimit.get(), self.maxLimit.get())
+            if self.status_message == PlotStatus.no1.value:  # if Dene
+                self.fig = self.plotter.plotFunction(self.equation.get(), self.minLimit.get(), self.maxLimit.get())
+                self.updateFigure()
+            else:
+                self.showErrorMessage()
+        except:
+            self.status_message = PlotStatus.no0.value
             self.showErrorMessage()
 
     def updateFigure(self):
@@ -68,6 +74,7 @@ class UserInterface:
         b.place(x=450, y=410)
 
         # Create Min Limit Label & Entry
+        label = StringVar()
         l = Label(self.root, textvariable=label)
         label.set("Min Limit: ")
         l.config(font=('Comic Sans MS bold', 10), fg="#000", bg="#DECBA4")
@@ -78,6 +85,7 @@ class UserInterface:
         e.place(x=100, y=467)
 
         # Create Max Limit Label & Entry
+        label = StringVar()
         l = Label(self.root, textvariable=label)
         label.set("Max Limit: ")
         l.config(font=('Comic Sans MS bold', 10), fg="#000", bg="#DECBA4")
