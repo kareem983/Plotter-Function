@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f231f395-ae8a-43a0-be97-d9e169ef3c0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserInterface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlotterFunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plotter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.PlotterFunction (1)">
+    <configuration name="PlotterFunction (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PlotterFunction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PlotterFunction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PlotterFunction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PlotterFunction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -58,6 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PlotterFunction (1)" />
         <item itemvalue="Python.PlotterFunction" />
       </list>
     </recent_temporary>
@@ -114,30 +135,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="validate: Adding Validation on Equation Format." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1651642961808">
+    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1652213725212">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1651642961808" />
+    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1652213725212" />
     <state x="462" y="123" key="FileChooserDialogImpl" timestamp="1651612737223">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1651612737223" />
-    <state width="1345" height="85" key="GridCell.Tab.0.bottom" timestamp="1651680046674">
+    <state width="1345" height="126" key="GridCell.Tab.0.bottom" timestamp="1652213711270">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="85" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1651680046674" />
-    <state width="1345" height="85" key="GridCell.Tab.0.center" timestamp="1651680046674">
+    <state width="1345" height="126" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1652213711270" />
+    <state width="1345" height="126" key="GridCell.Tab.0.center" timestamp="1652213711270">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="85" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1651680046674" />
-    <state width="1345" height="85" key="GridCell.Tab.0.left" timestamp="1651680046672">
+    <state width="1345" height="126" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1652213711270" />
+    <state width="1345" height="126" key="GridCell.Tab.0.left" timestamp="1652213711270">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="85" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1651680046672" />
-    <state width="1345" height="85" key="GridCell.Tab.0.right" timestamp="1651680046674">
+    <state width="1345" height="126" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1652213711270" />
+    <state width="1345" height="126" key="GridCell.Tab.0.right" timestamp="1652213711270">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1345" height="85" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1651680046674" />
+    <state width="1345" height="126" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1652213711270" />
     <state width="1345" height="163" key="GridCell.Tab.1.bottom" timestamp="1651678986316">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -162,10 +183,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="102" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1651642970001" />
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1651679982459">
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1652213085231">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1651679982459" />
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1652213085231" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1651677011102">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

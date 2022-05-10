@@ -49,9 +49,9 @@ class Plotter:
         minLimit = int(minLimit)
         maxLimit = int(maxLimit)
         x = np.linspace(minLimit, maxLimit, 100)
-        tst = f"0*x+" + self.equation
+        parsed_equation = f"0*x+" + self.equation
         try:
-            y = eval(tst)
+            y = eval(parsed_equation)
         except:
             self.plot_status = PlotStatus.no4.value
 
