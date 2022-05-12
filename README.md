@@ -1,15 +1,15 @@
 
 # Plotter-Function
-GUI program that plots arbitrary user-entered function.
+> GUI Desktop App that plots arbitrary user-entered function.
 
 ## Features
 
-- The Program take a function of x from the user, e.g., 5 * x^3 + 2 * x.
-- It take min and max values of x from the user.
-- The following operators must be supported: + - / * ^.
-- It Validate the User Input for any missing program instruction.
-- It plot the validated function.
-- It Display messages to the user to explain any wrong input.
+- [1] The app take a function of x from the user, e.g., 5 * x^3 + 2 * x.
+- [2] It take min and max values of x from the user.
+- [3] It supports the following operators: + - / * ^.
+- [4] It validate the User Input for any missing program instruction.
+- [5] It plot the validated function.
+- [6] It display messages to the user to explain any wrong input.
 
 ## Demo EXE File
 
